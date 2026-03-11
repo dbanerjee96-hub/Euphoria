@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus&display=swap');
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #27252A;
+    --secondary-color: #DE968D;
+    --tertiary-color: #FFFFFF;
+    --fourth-color: #949197;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sub-hdr {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.title1 {
+    font-family: "Marcellus", serif;
+    font-size: 70px;
+    color: var(--tertiary-color);
+    margin-bottom: 20px;
+}
+
+.title2 {
+    font-family: "Marcellus", serif;
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.primary-btn {
+    background: var(--secondary-color);
+    padding: 16px 32px;
+    color: var(--tertiary-color);
+}
+
+
+/* Header Starts */
+
+.top-navbar {
+    background: var(--primary-color);
+    padding: 10px 0;
+}
+
+.top-bar-cnt {
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.t-b-no,
+.t-b-email,
+.t-b-address {
+    display: flex;
+    /* margin-left: 50px; */
+}
+
+.no,
+.email,
+.address {
+    color: var(--tertiary-color);
+    font-family: "Manrope", sans-serif;
+    margin-left: 10px;
+}
+
+.bottom-navbar {
+    /* backdrop-filter: blur(10px); */
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    color: pink !important;
+}
+
+.icons-svg,
+.icons-svg-1 {
+    margin-left: 30px;
+}
+
+/* Header Ends */
+
+/* Banner Starts */
+
+.banner-section {
+    background: url(../assets/banner.png) no-repeat center/cover;
+    padding: 244px 0;
+    min-height: 100vh;
+}
+
+.banner-content {
+    max-width: 928px;
+}
+
+.banner-content .sub-title {
+    margin-bottom: 50px;
+    max-width: 810px;
+}
+
+/* Banner Ends */
+
+/* About Starts */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-us-images {
+    position: relative;
+    min-height: 630px;
+}
+
+.About-img-1 {
+    position: relative;
+    z-index: 2;
+}
+
+.play-btn {
+    position: absolute;
+    top: 205px;
+    left: 130px;
+}
+
+.About-img-2 {
+    position: absolute;
+    top: 180px;
+    left: 290px;
+    z-index: 1;
+}
+
+.book-now {
+    position: absolute;
+    z-index: 3;
+    top: 500px;
+    left: 87px;
+}
+
+.outer-box {
+    padding: 10px;
+    border-radius: 50px 0 0 50px;
+}
+
+.pink-extension {
+    background-color: var(--secondary-color);
+    width: 35px;
+    height: 80px;
+}
+
+.book-now-2,
+.book-now-no {
+    font-family: "Manrope", sans-serif;
+    color: var(--tertiary-color);
+}
+
+.about-us .sub-hdr {
+    margin-bottom: 0;
+}
+
+.about-us-content .title2 {
+    max-width: 583px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.about-us-content .sub-title {
+    font-size: 18px;
+    max-width: 583px;
+    color: var(--fourth-color);
+    margin-bottom: 30px;
+}
+
+.about-us-line {
+    border: 1px solid var(--fourth-color);
+    max-width: 583px;
+}
+
+.about-us-btm-cnt {
+    max-width: 583px;
+    margin-bottom: 30px;
+}
+
+.clients-under {
+    font-family: "Manrope", sans-serif;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+/* About Ends */
+
+/* Media Query Starts */
+
+@media screen and (max-width:1200px) {
+    /* Header Section */
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .menu {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        padding: 5px 20px;
+        color: var(--tertiary-color);
+        position: relative;
+        z-index: 999;
+    }
+
+    .menu::after,
+    .menu::before {
+        content: "";
+        height: 2px;
+        background: white;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 0.5s linear;
+    }
+
+    .menu::after {
+        top: -5px;
+    }
+
+    .menu::before {
+        bottom: -5px;
+    }
+
+    .menu span {
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.5s linear;
+    }
+
+    .menu.show span {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    .menu.show::after {
+        transform: rotate(45deg) translateX(13px);
+    }
+
+    .menu.show::before {
+        transform: rotate(-45deg) translateX(13px);
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .icons-svg {
+        margin-left: 0;
+    }
+
+    .icons-svg-1 {
+        margin-right: 30px;
+    }
+
+    .navbar-collapse {
+        display: block;
+        position: fixed;
+        top: 0;
+        min-height: 100vh;
+        right: -100%;
+        width: 60%;
+        background: black;
+        transition: 0.5s linear;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+
+    /* About Section */
+
+    .about-us {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .about-us-content .title2 {
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .about-us-content .sub-title {
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .about-us-line {
+        margin: 0 auto;
+    }
+
+    .about-us-btm-cnt {
+        margin: 0 auto;
+    }
+
+    .about-us-btn {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    .about-us-images {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Header Section */
+
+    .top-bar-cnt {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .navbar-collapse {
+        top: 44px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .navbar-collapse {
+        top: 78px;
+    }
+
+    .nav-logo img {
+        max-width: 120px;
+    }
+
+    .navbar-collapse {
+        width: 90%;
+    }
+
+    /* Banner Section */
+
+    .title1 {
+        font-size: 50px;
+    }
+
+    .banner-content .sub-hdr,
+    .banner-content .sub-title {
+        font-size: 16px;
+    }
+
+    /* About Section */
+
+
+    .title2 {
+        font-size: 36px;
+    }
+
+    .about-us-content .sub-hdr,
+    .about-us-content .sub-title {
+        font-size: 16px;
+    }
+
+   
+
+
+}
+
+@media screen and (max-width:375px) {
+    .navbar-collapse {
+        top: 112px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0;
+    }
+}

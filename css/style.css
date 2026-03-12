@@ -137,17 +137,24 @@ a {
 .about-us-images {
     position: relative;
     min-height: 630px;
+    width: 100%;
+}
+
+.about-us-images img {
+    max-width: 100%;
 }
 
 .About-img-1 {
     position: relative;
+    display: inline-block;
     z-index: 2;
 }
 
-.play-btn {
+.About-img-1 .play-btn {
     position: absolute;
-    top: 205px;
-    left: 130px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .About-img-2 {
@@ -215,6 +222,187 @@ a {
 }
 
 /* About Ends */
+
+/* Our Treatment Starts */
+
+.our-treatment-section {
+    padding: 100px 0 180px;
+    /* background-color: #F2D5D1; */
+    background: url(../assets/o-t-bg-img.png);
+    position: relative;
+}
+
+.o-t-s-img {
+    position: absolute;
+    top: -200px;
+    right: 60px;
+}
+
+.o-t-hdr .sub-hdr {
+    margin-bottom: 0;
+}
+
+.our-treatment-content .title2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.o-t-box,
+.o-t-box-black {
+    padding: 20px 20px 55px;
+}
+
+.o-t-box-black .o-t-text {
+    color: white;
+}
+
+.o-t-text {
+    font-family: "Marcellus", serif;
+    font-size: 18px;
+}
+
+.o-t-box-1 {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.o-t-1 {
+    margin-bottom: 20px;
+}
+
+/* Our Treatment Ends */
+
+/* Hour Starts */
+
+.hours-section {
+    margin-top: -110px;
+    position: relative;
+    z-index: 5;
+}
+
+.hours-black-box {
+    padding: 30px 55px 30px 20px;
+    background: var(--primary-color);
+}
+
+.open-hr {
+    font-family: "Marcellus", serif;
+    font-size: 30px;
+}
+
+.day,
+.time {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+}
+
+.time {
+    color: var(--secondary-color);
+}
+
+.hours-line {
+    width: 1px;
+    height: 80px;
+    background: var(--tertiary-color);
+}
+
+/* Hour Ends */
+
+/* What Else Starts */
+
+.what-else-section {
+    padding: 100px 0;
+}
+
+.what-else-hdr {
+    margin-bottom: 20px;
+}
+
+.w-e-img {
+    position: relative;
+    z-index: 1;
+}
+
+.what-else-content .sub-hdr {
+    margin-bottom: 0;
+}
+
+.w-e-img .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* What Else Ends */
+
+/* Special Treatment Starts */
+
+.special-treatment-section {
+    padding: 100px 0;
+}
+
+.special-treatment-content .title2 {
+    text-align: center;
+}
+
+.s-t-hdr {
+    margin-bottom: 20px;
+}
+
+.s-t-hdr .sub-hdr {
+    margin-bottom: 0;
+}
+
+.special-treatment-content .title2 {
+    margin-bottom: 60px;
+}
+
+.spe1,
+.spe2 {
+    margin-bottom: 50px;
+}
+
+.s-t-circle {
+    position: relative;
+    margin-right: 10px;
+}
+
+.s-t-1,
+.s-t-2,
+.s-t-3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spe-hdr {
+    font-family: "Marcellus", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.spe-p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    max-width: 297px;
+}
+
+.s-t-middle-pic {
+    position: relative;
+}
+
+.s-t-middle-img {
+    position: absolute;
+    left: 125px;
+    top: 95px;
+    /* transform: translate(-50%, -50%); */
+}
+
+/* Special Treatment Ends */
 
 /* Media Query Starts */
 
@@ -357,6 +545,38 @@ a {
         margin: 0 auto;
     }
 
+    /* Special Treatment Section */
+
+    .s-t-middle-pic img {
+        max-width: 300px !important;
+        height: 390px;
+    }
+
+    .s-t-middle-img {
+        /* max-width: 260px !important; */
+        height: 340px !important;
+        top: 38px;
+        left: 55px;
+    }
+
+    .s-t-bottom-part {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .s-t-middle {
+        order: 1;
+    }
+
+    .s-t-left {
+        order: 2;
+    }
+
+    .s-t-right {
+        order: 3;
+    }
+
 }
 
 @media screen and (max-width:1024px) {
@@ -369,17 +589,62 @@ a {
         gap: 10px;
     }
 
+
+    /* Our Treatment Section */
+
+    .o-t-s-img {
+        max-width: 200px;
+        top: -100px;
+    }
+
+    .o-t-box,
+    .o-t-box-black {
+        /* padding: 10px 20px; */
+        margin: 10px;
+    }
+
+    /* What Else Section */
+
+    .what-else {
+        flex-wrap: wrap;
+    }
+
+    .what-else-hdr {
+        justify-content: center !important;
+    }
+
+    .what-else-left .title2 {
+        text-align: center;
+    }
+
+    .what-else-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .hours-black-box>div {
+        padding: 10px 20px;
+    }
+
+    .hours-line {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
     .navbar-collapse {
-        top: 44px;
+        top: 0;
     }
 }
 
 @media screen and (max-width:425px) {
+
     .navbar-collapse {
-        top: 78px;
+        top: 0;
     }
 
     .nav-logo img {
@@ -394,12 +659,20 @@ a {
 
     .title1 {
         font-size: 50px;
+        text-align: center;
     }
 
     .banner-content .sub-hdr,
     .banner-content .sub-title {
         font-size: 16px;
+        text-align: center;
     }
+
+    .banner-btn {
+        text-align: center;
+    }
+
+
 
     /* About Section */
 
@@ -408,20 +681,34 @@ a {
         font-size: 36px;
     }
 
-    .about-us-content .sub-hdr,
-    .about-us-content .sub-title {
+    .sub-hdr,
+    .sub-title {
         font-size: 16px;
     }
 
-   
+    .about-us-btm-cnt {
+        justify-content: center !important;
+    }
 
+    .About-img-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .About-img-2 {
+        display: none;
+    }
+
+    /* What Else Section */
+
+    .w-e-img img {
+        max-width: 280px;
+    }
 
 }
 
 @media screen and (max-width:375px) {
-    .navbar-collapse {
-        top: 112px;
-    }
+
 
     .navbar-nav .nav-item {
         margin-bottom: 0;

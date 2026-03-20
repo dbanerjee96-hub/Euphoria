@@ -12,6 +12,13 @@ body {
     --fourth-color: #949197;
 }
 
+.navbar-container {
+    max-width: 1950px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 ul,
 p {
     margin: 0;
@@ -89,7 +96,6 @@ a {
 }
 
 .bottom-navbar {
-    /* backdrop-filter: blur(10px); */
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -247,11 +253,6 @@ a {
     margin-bottom: 60px;
 }
 
-.o-t-box,
-.o-t-box-black {
-    padding: 20px 20px 55px;
-}
-
 .o-t-box-black .o-t-text {
     color: white;
 }
@@ -404,6 +405,109 @@ a {
 
 /* Special Treatment Ends */
 
+/* Easy Step Starts */
+
+.easy-step-section {
+    padding: 100px 0;
+}
+
+.pink-border {
+    max-width: 1740px;
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+    margin: 0 auto;
+}
+
+.pink-box {
+    background: url(../assets/easy-step/pink-box-leaf.png) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 0 0;
+    position: relative;
+}
+
+.e-s-hdr {
+    text-align: center;
+}
+
+.e-s-hdr .title2 {
+    margin-bottom: 110px;
+}
+
+.e-s-hd {
+    margin-bottom: 20px;
+}
+
+.e-s-hd .sub-hdr {
+    margin-bottom: 0;
+}
+
+.pink-left-corner {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.e-s-m-p-left,
+.e-s-m-p-middle,
+.e-s-m-p-right {
+    text-align: center;
+}
+
+.m-p-hdr {
+    font-family: "Marcellus", serif;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.m-p-left,
+.m-p-middle,
+.m-p-right {
+    position: relative;
+}
+
+.appnt-icon,
+.mentoring-icon,
+.thumbsup-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.m-p-desc {
+    max-width: 350px;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    color: var(--fourth-color);
+    margin-bottom: 120px;
+}
+
+.easy-step-bottom-portion {
+    padding: 30px 40px;
+    background: var(--secondary-color);
+}
+
+.time-bottom {
+    font-family: "Manrope", sans-serif;
+    font-size: 45px;
+    color: var(--tertiary-color);
+}
+
+.time-desc {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--tertiary-color);
+}
+
+.line2 {
+    border: 1px solid var(--tertiary-color);
+    height: 148px;
+}
+
+/* Easy Step Ends */
+
 /* Media Query Starts */
 
 @media screen and (max-width:1200px) {
@@ -544,6 +648,50 @@ a {
         max-width: 600px;
         margin: 0 auto;
     }
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Header Section */
+
+    .top-bar-cnt {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+    /* Our Treatment Section */
+
+    .o-t-s-img {
+        max-width: 200px;
+        top: -100px;
+    }
+
+    .o-t-box,
+    .o-t-box-black {
+        margin: 10px;
+    }
+
+    /* What Else Section */
+
+    .what-else {
+        flex-wrap: wrap;
+    }
+
+    .what-else-hdr {
+        justify-content: center !important;
+    }
+
+    .what-else-left .title2 {
+        text-align: center;
+    }
+
+    .what-else-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 
     /* Special Treatment Section */
 
@@ -577,55 +725,34 @@ a {
         order: 3;
     }
 
-}
+    /* Easy Steps */
 
-@media screen and (max-width:1024px) {
-
-    /* Header Section */
-
-    .top-bar-cnt {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+    .pink-left-corner {
+        max-width: 300px;
     }
 
-
-    /* Our Treatment Section */
-
-    .o-t-s-img {
-        max-width: 200px;
-        top: -100px;
+    .easy-step-section .title2 {
+        margin-bottom: 30px;
     }
 
-    .o-t-box,
-    .o-t-box-black {
-        /* padding: 10px 20px; */
-        margin: 10px;
+    .easy-step-middle-portion {
+        gap: 20px;
     }
 
-    /* What Else Section */
-
-    .what-else {
-        flex-wrap: wrap;
+    .m-p-desc {
+        margin-bottom: 30px;
     }
 
-    .what-else-hdr {
-        justify-content: center !important;
-    }
-
-    .what-else-left .title2 {
-        text-align: center;
-    }
-
-    .what-else-right {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .easy-step-bottom-portion {
+        gap: 25px;
     }
 
 }
 
 @media screen and (max-width:992px) {
+
+    /* Hours Section */
+
     .hours-black-box>div {
         padding: 10px 20px;
     }
@@ -633,11 +760,36 @@ a {
     .hours-line {
         display: none;
     }
+
+    /* Easy Steps Section */
+
+    .line2 {
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
     .navbar-collapse {
         top: 0;
+    }
+
+    .hours-section {
+        top: 80px;
+    }
+
+    .about-section,
+    .our-treatment-section,
+    .special-treatment-section,
+    .easy-step-section {
+        padding: 50px 0;
+    }
+
+    .what-else-section {
+        padding: 100px 0 50px;
+    }
+
+    .pink-left-corner {
+        max-width: 200px;
     }
 }
 
@@ -705,11 +857,15 @@ a {
         max-width: 280px;
     }
 
+    .pink-left-corner {
+        max-width: 100px;
+    }
+
 }
 
 @media screen and (max-width:375px) {
 
-
+    /* Header Section */
     .navbar-nav .nav-item {
         margin-bottom: 0;
     }

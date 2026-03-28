@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -74,19 +78,19 @@
                 <div class="navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="">Services</a>
+                            <a class="nav-link text-white" href="./service.html">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="">About</a>
+                            <a class="nav-link text-white" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="">News</a>
+                            <a class="nav-link text-white" href="./news.html">News</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="">Contact</a>
@@ -330,6 +334,22 @@
 
     <!-- What Else Ends -->
 
+    <!-- Marquee Starts -->
+
+    <section class="marquee-section">
+        <div class="navbar-container">
+            <div class="marquee">
+                <span>AROMA THERAPY <img src="./assets/marquee-leaf.png" alt=""> BODY MASSAGE <img
+                        src="./assets/marquee-leaf.png" alt=""> SAUNA RELAX <img src="./assets/marquee-leaf.png" alt="">
+                    AROMA THERAPY <img src="./assets/marquee-leaf.png" alt=""> BODY MASSAGE <img
+                        src="./assets/marquee-leaf.png" alt=""> SAUNA RELAX <img src="./assets/marquee-leaf.png" alt="">
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Ends -->
+
     <!-- Special Treatment Starts -->
 
     <section class="special-treatment-section">
@@ -509,8 +529,853 @@
 
     <!-- Easy Step Ends -->
 
+    <!-- Our Service Starts -->
+
+    <section class="our-service-section">
+        <div class="navbar-container">
+            <div class="our-service-content">
+                <div class="s-t-hdr d-flex align-items-end justify-content-start">
+                    <div><img src="./assets/flower-icon.png" alt=""></div>
+                    <div class="sub-hdr">OUR SERVICES</div>
+                </div>
+                <h2 class="title2 text-white">A Wide Selection Service</h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper serviceSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./assets/service1.jpg" alt="">
+                            <span>HAIR CARE</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./assets/service2.jpg" alt="">
+                            <span>SAUNA RELAX</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide active-slide">
+                        <div class="service-card">
+                            <img src="./assets/service3.jpg" alt="">
+                            <span>BODY SCULPTING</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./assets/service4.jpg" alt="">
+                            <span>THERMAL BATH</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./assets/service5.jpg" alt="">
+                            <span>STONE MASSAGE</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-end mt-4">
+                <a class="primary-btn" href="#">VIEW ALL <img class="arrow" src="./assets/right-arrow.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Service Ends -->
+
+    <!-- Membership Starts -->
+
+    <section class="membership-section">
+        <div class="navbar-container">
+            <div class="membership-content">
+                <div class="s-t-hdr d-flex align-items-end justify-content-center">
+                    <div><img src="./assets/flower-icon.png" alt=""></div>
+                    <div class="sub-hdr">MEMBERSHIP</div>
+                </div>
+                <h2 class="title2 text-center">Choose Our Pricing Plan</h2>
+            </div>
+            <div class="membership-cards">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mem-card d-flex align-items-start bg-white">
+                            <div class="mem-img"><img src="./assets/membership1.png" alt=""></div>
+                            <div class="mem-card-cnt">
+                                <div class="mem-card-hdr">Start Membership</div>
+                                <div class="mem-card-lists">
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Aromatherapy Candles</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>True Transformation</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Organic Essential Oils</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Meditation Retreats</span>
+                                    </div>
+                                </div>
+                                <div class="mem-card-btn">
+                                    <a class="primary-btn" href="">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mem-card d-flex align-items-stretch bg-white">
+                            <div class="mem-img"><img src="./assets/membership2.png" alt=""></div>
+                            <div class="mem-card-cnt">
+                                <div class="mem-card-hdr">Basic Membership</div>
+                                <div class="mem-card-lists">
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Aromatherapy Candles</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>True Transformation</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Organic Essential Oils</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Meditation Retreats</span>
+                                    </div>
+                                </div>
+                                <div class="mem-card-btn">
+                                    <a class="primary-btn" href="">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mem-card d-flex align-items-stretch bg-white">
+                            <div class="mem-img"><img src="./assets/membership3.png" alt=""></div>
+                            <div class="mem-card-cnt">
+                                <div class="mem-card-hdr">Premium Membership</div>
+                                <div class="mem-card-lists">
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Aromatherapy Candles</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>True Transformation</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Organic Essential Oils</span>
+                                    </div>
+                                    <div class="mem-list">
+                                        <img src="./assets/circle-tick.png" alt="">
+                                        <span>Meditation Retreats</span>
+                                    </div>
+                                </div>
+                                <div class="mem-card-btn">
+                                    <a class="primary-btn" href="">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Ends -->
+
+    <!-- Gallery Starts -->
+
+    <section class="gallery-section">
+        <div class="navbar-container">
+            <h2 class="title2 text-center">Follow Gallery</h2>
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./assets/gallery-1.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/gallery-2.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/gallery-3.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/gallery-4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/gallery-1.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/gallery-2.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Arrows -->
+                <div class="swiper-button-next gallery-next"></div>
+                <div class="swiper-button-prev gallery-preview"></div>
+
+                <div class="swiper-pagination gallery-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Ends -->
+
+    <!-- Testimonial Starts -->
+
+    <section class="testimonial-section">
+        <div class="navbar-container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="test-card">
+                        <div class="s-t-hdr d-flex align-items-end">
+                            <div><img src="./assets/flower-icon.png" alt=""></div>
+                            <div class="sub-hdr">TALK TO US</div>
+                        </div>
+                        <h3 class="title3">How May We Help You</h3>
+                        <form>
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <select class="form-select">
+                                        <option>Select Services</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4" placeholder="Write Message"></textarea>
+                                </div>
+
+                                <div class="test-card-btn d-flex justify-content-center">
+                                    <a class="primary-btn" href="">BOOK NOW <img class="arrow"
+                                            src="./assets/right-arrow.png" alt=""></a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="testimonial-box text-white w-100">
+                        <div class="s-t-hdr d-flex align-items-end">
+                            <img src="./assets/flower-icon.png" alt="">
+                            <span class="sub-hdr text-white">TESTIMONIAL</span>
+                        </div>
+                        <h3 class="title3 text-white">They Say About Us</h3>
+                        <p class="test-desc">
+                            It is a long established fact that a reader will be distracted the readable content of a
+                            page when looking at layout the point of using lorem the is Ipsum less normal distribution
+                            of letters.
+                        </p>
+                        <div class="swiper testimonialSwiper mt-4">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card ">
+                                        <div class="testimonial d-flex align-items-center justify-content-between">
+                                            <div class="test-left-part d-flex align-items-center justify-content-start">
+                                                <div class="user-image mb-2">
+                                                    <img src="./assets/testimonial1.png" alt="">
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="test-name text-white mb-1">Kevin Smith</div>
+                                                        <div class="customer mb-3">Customer</div>
+                                                        <div
+                                                            class="ratings d-flex align-items-center justify-content-start gap-1">
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="test-number-circle d-flex justify-content-center align-items-center">
+                                                <div class="value">99</div>
+                                            </div>
+                                        </div>
+                                        <div class="user-comments">
+                                            There are many variations of passages Lorem Ipsum but the majority have
+                                            suffered alteration in some form, by injected humour.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card ">
+                                        <div class="testimonial d-flex align-items-center justify-content-between">
+                                            <div class="test-left-part d-flex align-items-center justify-content-start">
+                                                <div class="user-image mb-2">
+                                                    <img src="./assets/testimonial1.png" alt="">
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <div class="test-name text-white mb-1">Kevin Smith</div>
+                                                        <div class="customer mb-3">Customer</div>
+                                                        <div
+                                                            class="ratings d-flex align-items-center justify-content-start gap-1">
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="test-star"><img src="./assets/pink-star.png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="test-number-circle d-flex justify-content-center align-items-center">
+                                                <div class="value">99</div>
+                                            </div>
+                                        </div>
+                                        <div class="user-comments">
+                                            There are many variations of passages Lorem Ipsum but the majority have
+                                            suffered alteration in some form, by injected humour.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation -->
+                            <div class="d-flex gap-2 mt-5 justify-content-center">
+                                <div class="swiper-button-prev custom-nav"></div>
+                                <div class="swiper-button-next custom-nav"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Ends -->
+
+    <!-- Specialist Starts -->
+
+    <section class="specialist-section">
+        <div class="navbar-container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="spe-card-1">
+                        <div class="spe-card-cnt p-4">
+                            <div class="spe-name">Ana Doe</div>
+                            <div class="spe-occupation">Consultant</div>
+
+                            <div class="spe-social">
+                                <a href="#"><img src="./assets/facebook-02.png" alt=""></a>
+                                <a href="#"><img src="./assets/new-twitter.png" alt=""></a>
+                                <a href="#"><img src="./assets/youtube.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="spe-card-2">
+                        <div class="spe-card-cnt p-4">
+                            <div class="spe-name">Emiley Jonson</div>
+                            <div class="spe-occupation">Massage Expert</div>
+
+                            <div class="spe-social">
+                                <a href="#"><img src="./assets/facebook-02.png" alt=""></a>
+                                <a href="#"><img src="./assets/new-twitter.png" alt=""></a>
+                                <a href="#"><img src="./assets/youtube.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist-text col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="s-t-hdr d-flex align-items-end">
+                        <img src="./assets/flower-icon.png" alt="">
+                        <span class="sub-hdr">TALK TO US</span>
+                    </div>
+                    <h3 class="title3 mb-4">Our Experienced Specialists</h3>
+                    <p class="spe-desc mb-5">
+                        The primary goal of business consulting is to help organizations improve their performance,
+                        solve specific problems, and achieve .
+                    </p>
+                    <div class="test-card-btn d-flex">
+                        <a class="primary-btn" href="">BOOK NOW <img class="arrow" src="./assets/right-arrow.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="spe-card-3">
+                        <div class="spe-card-cnt p-4">
+                            <div class="spe-name">Erika Murry</div>
+                            <div class="spe-occupation">Manicure Specialist</div>
+
+                            <div class="spe-social">
+                                <a href="#"><img src="./assets/facebook-02.png" alt=""></a>
+                                <a href="#"><img src="./assets/new-twitter.png" alt=""></a>
+                                <a href="#"><img src="./assets/youtube.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="spe-card-4">
+                        <div class="spe-card-cnt p-4">
+                            <div class="spe-name">Rose Marian</div>
+                            <div class="spe-occupation">Aroma Specialist</div>
+
+                            <div class="spe-social">
+                                <a href="#"><img src="./assets/facebook-02.png" alt=""></a>
+                                <a href="#"><img src="./assets/new-twitter.png" alt=""></a>
+                                <a href="#"><img src="./assets/youtube.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="spe-card-5">
+                        <div class="spe-card-cnt p-4">
+                            <div class="spe-name">Lenda Murrey</div>
+                            <div class="spe-occupation">Relax Specialist</div>
+
+                            <div class="spe-social">
+                                <a href="#"><img src="./assets/facebook-02.png" alt=""></a>
+                                <a href="#"><img src="./assets/new-twitter.png" alt=""></a>
+                                <a href="#"><img src="./assets/youtube.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialist Ends -->
+
+    <!-- Faq Starts -->
+
+    <section class="faq-section">
+        <div class="navbar-container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="faq-content">
+                        <div class="s-t-hdr d-flex align-items-end">
+                            <img src="./assets/flower-icon.png" alt="">
+                            <span class="sub-hdr">FAQ</span>
+                        </div>
+                        <h3 class="title3">Most Common Question?</h3>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Which Ingredients Are Required For Skin
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        There are many variations of passages Lorem Ipsum but the majority have suffered
+                                        alteration in some form, by injected humour.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is Included in Your Service
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        There are many variations of passages Lorem Ipsum but the majority have suffered
+                                        alteration in some form, by injected humour.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        What We Should Do if Our Skin Gets Dry?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        There are many variations of passages Lorem Ipsum but the majority have suffered
+                                        alteration in some form, by injected humour.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsefour" aria-expanded="false"
+                                        aria-controls="collapsefour">
+                                        What Type of Company is Measured?
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        There are many variations of passages Lorem Ipsum but the majority have suffered
+                                        alteration in some form, by injected humour.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="faq-pictures-section">
+                        <div class="faq-img-1"><img src="./assets/faq-pic-1.png" alt="">
+                            <div class="faq-play-btn"><a href=""><img src="./assets/about-play.png" alt=""></a></div>
+                        </div>
+                        <div class="faq-img-2"><img src="./assets/faq-pic-2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faq Ends -->
+
+    <!-- Blog Starts -->
+
+    <section class="blog-section">
+        <div class="navbar-container">
+            <div class="blog-cnt">
+                <div class="s-t-hdr d-flex align-items-end justify-content-center">
+                    <div><img src="./assets/flower-icon.png" alt=""></div>
+                    <div class="sub-hdr">OUR BLOG</div>
+                </div>
+                <h2 class="title2 text-center">Our Latest News & Blog</h2>
+            </div>
+
+            <div class="swiper blogSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="./assets/blog-1.png" alt="">
+                                <div class="date-box">
+                                    <div class="d-b-date">24</div>
+                                    <div class="d-b-month">MAY</div>
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="meta">
+                                    <div>Admin</div>
+                                    <div>0 Comments</div>
+                                </div>
+                                <div class="blog-box-hdr">Top Skin Care Tips For Oily Skins</div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="./assets/blog-2.png" alt="">
+                                <div class="date-box">
+                                    <div class="d-b-date">01</div>
+                                    <div class="d-b-month">May</div>
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="meta">
+                                    <div>Admin</div>
+                                    <div>0 Comments</div>
+                                </div>
+                                <div class="blog-box-hdr">Tips to select anti-aging producs</div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="./assets/blog-3.png" alt="">
+                                <div class="date-box">
+                                    <div class="d-b-date">24</div>
+                                    <div class="d-b-month">April</div>
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="meta">
+                                    <div>Admin</div>
+                                    <div>0 Comments</div>
+                                </div>
+                                <div class="blog-box-hdr">Colouring tips for healthier hair</div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="./assets/blog-4.png" alt="">
+                                <div class="date-box">
+                                    <div class="d-b-date">10</div>
+                                    <div class="d-b-month">March</div>
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="meta">
+                                    <div>Admin</div>
+                                    <div>0 Comments</div>
+                                </div>
+                                <div class="blog-box-hdr">Skin care tips dermatologists use</div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="./assets/blog-1.png" alt="">
+                                <div class="date-box">
+                                    <div class="d-b-date">24</div>
+                                    <div class="d-b-month">MAY</div>
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="meta">
+                                    <div>Admin</div>
+                                    <div>0 Comments</div>
+                                </div>
+                                <div class="blog-box-hdr">Top Skin Care Tips For Oily Skins</div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="blog-img">
+                                <img src="./assets/blog-2.png" alt="">
+                                <div class="date-box">
+                                    <div class="d-b-date">24</div>
+                                    <div class="d-b-month">MAY</div>
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <div class="meta">
+                                    <div>Admin</div>
+                                    <div>0 Comments</div>
+                                </div>
+                                <div class="blog-box-hdr">Top Skin Care Tips For Oily Skins</div>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arrows -->
+                <div class="swiper-button-next blog-next"></div>
+                <div class="swiper-button-prev blog-preview"></div>
+
+                <div class="swiper-pagination blog-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Ends -->
+
+    <!-- Branding Starts -->
+
+    <section class="branding-section">
+        <div class="navbar-container">
+            <div class="branding-content d-flex align-items-center justify-content-between">
+                <div><img src="./assets/brand-1.png" alt=""></div>
+                <div><img src="./assets/brand-2.png" alt=""></div>
+                <div><img src="./assets/brand-3.png" alt=""></div>
+                <div><img src="./assets/brand-4.png" alt=""></div>
+                <div><img src="./assets/brand-5.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branding Ends -->
+
+    <!-- Contact Starts -->
+
+    <section class="contact-section">
+        <div class="navbar-container">
+            <div class="row">
+                <div class="contact-content col-12 col-lg-6">
+                    <div class="s-t-hdr d-flex align-items-end">
+                        <img src="./assets/flower-icon.png" alt="">
+                        <span class="sub-hdr text-white">CONTACT WITH US ANY TIME</span>
+                    </div>
+                    <h3 class="title3 text-white">Require relaxation or seeking a recharge?</h3>
+                    <div class="contact-btns d-flex align-items-center">
+                        <div class="contact-btn-1 d-flex">
+                            <a class="primary-btn" href="">BOOK NOW <img class="arrow" src="./assets/right-arrow.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="contact-btn-2 d-flex ms-3">
+                            <a class="secondary-btn" href="">BOOK NOW <img class="arrow" src="./assets/right-arrow.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-images col-12 col-lg-6 position-relative">
+                    <div class="contact-img-1"><img src="./assets/contact-pic-1.png" alt=""></div>
+                    <div class="contact-img-left"><img src="./assets/contact-pic-left.png" alt=""></div>
+                    <div class="contact-img-right"><img src="./assets/contact-pic-right.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Ends -->
+
+    <!-- Footer Starts -->
+
+    <footer>
+        <div class="navbar-container">
+            <div class="row">
+                <div class="ft-logo-sec col-12 col-md-6 col-lg-4">
+                    <a class="mb-4 ft-logo" href=""><img src="./assets/footer-logo.png" alt=""></a>
+                    <div class="ft-para text-white mb-4">
+                        Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia
+                        mollis.
+                    </div>
+                    <div class="location d-flex align-items-center gap-2 mb-4">
+                        <img src="./assets/footer-location.png" alt="">
+                        <div class="text-white">Lassen, Yuba City, California</div>
+                    </div>
+                    <div class="phone d-flex align-items-center gap-2 mb-4">
+                        <img src="./assets/footer-call.png" alt="">
+                        <div class="text-white">+91 000 123 00</div>
+                    </div>
+                    <div class="ft-icons">
+                        <a href=""><img src="./assets/facebook-02.png" alt=""></a>
+                        <a href=""><img src="./assets/instagram.png" alt=""></a>
+                        <a href=""><img src="./assets/new-twitter.png" alt=""></a>
+                        <a href=""><img src="./assets/youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="quick-links col-12 col-md-6 col-lg-2">
+                    <div class="q-links text-white mb-5">Quick Links</div>
+                    <ul>
+                        <li><a class="ft-links text-white mb-4" href="">About Euphoria</a></li>
+                        <li><a class="ft-links text-white mb-4" href="">Our Services</a></li>
+                        <li><a class="ft-links text-white mb-4" href="">Our Shop</a></li>
+                        <li><a class="ft-links text-white mb-4" href="">Our Blog</a></li>
+                        <li><a class="ft-links text-white" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="our-services col-12 col-md-6 col-lg-2">
+                    <div class="o-services text-white mb-5">Our Services</div>
+                    <ul>
+                        <li><a class="ft-links text-white mb-4" href="">Body Sculpting</a></li>
+                        <li><a class="ft-links text-white mb-4" href="">Stone Massage</a></li>
+                        <li><a class="ft-links text-white mb-4" href="">Hair Restore</a></li>
+                        <li><a class="ft-links text-white mb-4" href="">Sauna Relax</a></li>
+                        <li><a class="ft-links text-white" href="">Thermal Bath</a></li>
+                    </ul>
+                </div>
+                <div class="news-letters col-12 col-md-6 col-lg-4">
+                    <div class="news-ltrs text-white mb-5">Newsletters</div>
+                    <div class="news-ltrs-desc text-white mb-5">Sing Up For News & Get 30% Off for Your Next services.
+                    </div>
+                    <form class="newsletter-form gap-3">
+                        <input type="email" name="email" id="email" placeholder="Your Email Address">
+                        <input type="submit" value="SUBSCRIBE">
+                    </form>
+                </div>
+            </div>
+            <div class="ft-line mt-5 mb-3"></div>
+            <div class="bottom-part-footer d-flex align-items-center justify-content-between">
+                <div class="copy-part">
+                    <span class="text-white">@2026 copyrights by <a class="text-white" href="">Euphoria.</a> All RIghts
+                        Reserved</span>
+                </div>
+                <div class="bottom-part-footer-right">
+                    <a class="terms text-white me-5">
+                        Terms & Conditions
+                    </a>
+                    <a class="policy text-white me-5">
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
     <!-- Js Starts -->
     <script>
+
+        // Header Section
         const menu = document.querySelector(".menu");
         const navbarCollapse = document.querySelector(".navbar-collapse");
 
@@ -529,6 +1394,105 @@
                 collapse = true;
             }
         });
+
+        // Service Section
+
+        const swiper = new Swiper(".serviceSwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            speed: 800,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                320: {
+                    spaceBetween: 10
+                },
+                768: {
+                    spaceBetween: 20
+                },
+                1024: {
+                    spaceBetween: 30
+                }
+            }
+        });
+
+        // Gallery Section
+
+        const gallerySwiper = new Swiper(".gallerySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            speed: 800,
+
+            navigation: {
+                nextEl: ".gallery-next",
+                prevEl: ".gallery-prev",
+            },
+
+            pagination: {
+                el: ".gallery-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+
+        // Testimonial Section
+
+        let testimonialSwiper = new Swiper(".testimonialSwiper", {
+            loop: true,
+            spaceBetween: 20,
+
+            navigation: {
+                nextEl: ".testimonialSwiper .swiper-button-next",
+                prevEl: ".testimonialSwiper .swiper-button-prev",
+            },
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            speed: 800,
+        });
+
+        // Blog Section
+
+        const blogSwiper = new Swiper(".blogSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            speed: 800,
+
+            navigation: {
+                nextEl: ".blog-next",
+                prevEl: ".blog-prev",
+            },
+
+            pagination: {
+                el: ".blog-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+
     </script>
 </body>
 

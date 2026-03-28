@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus&display=swap');
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #27252A;
+    --secondary-color: #DE968D;
+    --tertiary-color: #FFFFFF;
+    --fourth-color: #949197;
+}
+
+.navbar-container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sub-hdr {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.title1 {
+    font-family: "Marcellus", serif;
+    font-size: 70px;
+    color: var(--tertiary-color);
+    margin-bottom: 20px;
+}
+
+.title2 {
+    font-family: "Marcellus", serif;
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.title3 {
+    font-family: "Marcellus", serif;
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.primary-btn {
+    background: var(--secondary-color);
+    padding: 16px 50px 16px 32px;
+    color: var(--tertiary-color);
+    position: relative;
+}
+
+.primary-btn .arrow {
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    transition: transform 0.3s ease;
+}
+
+.primary-btn:hover .arrow {
+    transform: rotate(45deg)
+}
+
+/* Header Starts */
+
+.top-navbar {
+    background: var(--primary-color);
+    padding: 10px 0;
+}
+
+.top-bar-cnt {
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.t-b-no,
+.t-b-email,
+.t-b-address {
+    display: flex;
+    /* margin-left: 50px; */
+}
+
+.no,
+.email,
+.address {
+    color: var(--tertiary-color);
+    font-family: "Manrope", sans-serif;
+    margin-left: 10px;
+}
+
+.bottom-navbar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    color: pink !important;
+}
+
+.icons-svg,
+.icons-svg-1 {
+    margin-left: 30px;
+}
+
+/* Header Ends */
+
+/* Banner Starts */
+
+.banner-section {
+    background: url(../about-assets/about-banner.png) no-repeat center/cover;
+    min-height: 100vh;
+    padding: 244px 0;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content .sub-title {
+    color: var(--tertiary-color);
+    font-size: 30px;
+}
+
+.bnr-navigation {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    color: var(--tertiary-color);
+}
+
+/* Banner Ends */
+
+/* About Starts */
+
+.about-section {
+    padding: 100px 0 0;
+}
+
+.about-us-images {
+    position: relative;
+    min-height: 630px;
+    width: 100%;
+}
+
+.about-us-images img {
+    max-width: 100%;
+}
+
+.About-img-1 {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.About-img-1 .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.About-img-2 {
+    position: absolute;
+    top: 180px;
+    left: 290px;
+    z-index: 1;
+}
+
+.book-now {
+    position: absolute;
+    z-index: 3;
+    top: 500px;
+    left: 87px;
+}
+
+.outer-box {
+    padding: 10px;
+    border-radius: 50px 0 0 50px;
+}
+
+.pink-extension {
+    background-color: var(--secondary-color);
+    width: 35px;
+    height: 80px;
+}
+
+.book-now-2,
+.book-now-no {
+    font-family: "Manrope", sans-serif;
+    color: var(--tertiary-color);
+}
+
+.about-us .sub-hdr {
+    margin-bottom: 0;
+}
+
+.about-us-content .title2 {
+    max-width: 583px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.about-us-content .sub-title {
+    font-size: 18px;
+    max-width: 583px;
+    color: var(--fourth-color);
+    margin-bottom: 30px;
+}
+
+.about-us-line {
+    border: 1px solid var(--fourth-color);
+    max-width: 583px;
+}
+
+.about-us-btm-cnt {
+    max-width: 583px;
+    margin-bottom: 30px;
+}
+
+.clients-under {
+    font-family: "Manrope", sans-serif;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.about-section .row {
+    margin-bottom: 120px;
+}
+
+.easy-step-bottom-portion {
+    padding: 30px 40px;
+    background: var(--secondary-color);
+}
+
+.time-bottom {
+    font-family: "Manrope", sans-serif;
+    font-size: 45px;
+    color: var(--tertiary-color);
+}
+
+.time-desc {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--tertiary-color);
+}
+
+.line2 {
+    border: 1px solid var(--tertiary-color);
+    height: 148px;
+}
+
+/* About Ends */
+
+/* Company Benefits Starts */
+
+.company-benefits-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.company-benefits-section .title2 {
+    margin-bottom: 60px;
+}
+
+.c-b-cards {
+    margin-bottom: 60px;
+}
+
+.c-b {
+    display: flex;
+    align-items: center;
+}
+
+.c-b-hdr {
+    font-family: "Marcellus", serif;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+.c-b-desc {
+    max-width: 360px;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+}
+
+.c-b-image {
+    position: absolute;
+    left: -20px;
+    bottom: -80px;
+}
+
+.c-b-image img {
+    max-width: 350px;
+}
+
+/* Company Benefits Ends */
+
+/* Our Story Starts */
+
+.our-story-section {
+    padding: 100px 0;
+    background-color: rgba(222, 150, 141, 0.1);
+}
+
+.our-story-btn .primary-btn {
+    padding: 16px 32px;
+}
+
+/* Our Story Ends */
+
+/* Achievement Starts */
+
+.achievement-section {
+    padding: 100px 0 0;
+}
+
+.achieve-desc {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.achieve-image img {
+    width: 100%;
+}
+
+/* Achievement Ends */
+
+/* Branding Starts */
+
+.branding-section {
+    padding: 100px 0;
+}
+
+/* Branding Ends */
+
+/* Footer Starts */
+
+footer {
+    padding: 100px 0;
+    background: var(--primary-color);
+}
+
+.ft-logo img {
+    max-width: 250px;
+}
+
+.ft-icons img {
+    margin-right: 15px;
+}
+
+.ft-para,
+.location div,
+.phone div,
+.news-ltrs-desc {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+}
+
+.q-links,
+.o-services,
+.news-ltrs {
+    font-family: "Marcellus", serif;
+    font-size: 24px;
+}
+
+.ft-links {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--tertiary-color);
+}
+
+.newsletter-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.ft-line {
+    border: 1px solid var(--tertiary-color);
+}
+
+.terms,
+.policy {
+    cursor: pointer;
+}
+
+/* Footer Ends */
+
+/* Media Query Starts */
+
+@media screen and (max-width:1200px) {
+    /* Header Section */
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .menu {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        padding: 5px 20px;
+        color: var(--tertiary-color);
+        position: relative;
+        z-index: 999;
+    }
+
+    .menu::after,
+    .menu::before {
+        content: "";
+        height: 2px;
+        background: white;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 0.5s linear;
+    }
+
+    .menu::after {
+        top: -5px;
+    }
+
+    .menu::before {
+        bottom: -5px;
+    }
+
+    .menu span {
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.5s linear;
+    }
+
+    .menu.show span {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    .menu.show::after {
+        transform: rotate(45deg) translateX(13px);
+    }
+
+    .menu.show::before {
+        transform: rotate(-45deg) translateX(13px);
+    }
+
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .icons-svg {
+        margin-left: 0;
+    }
+
+    .icons-svg-1 {
+        margin-right: 30px;
+    }
+
+    .navbar-collapse {
+        display: block;
+        position: fixed;
+        top: 0;
+        min-height: 100vh;
+        right: -100%;
+        width: 60%;
+        background: black;
+        transition: 0.5s linear;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+
+    /* About Section */
+
+    .about-us {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .about-us-content .title2 {
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .about-us-content .sub-title {
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    .about-us-line {
+        margin: 0 auto;
+    }
+
+    .about-us-btm-cnt {
+        margin: 0 auto;
+    }
+
+    .about-us-btn {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    .about-us-images {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Header Section */
+
+    .top-bar-cnt {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* About Section */
+
+    .easy-step-bottom-portion {
+        gap: 25px;
+    }
+
+    /* Company Benefits Section */
+
+    .c-b-cards {
+        flex-wrap: wrap;
+    }
+
+    .c-b-card-3 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    .c-b-image img {
+        max-width: 200px;
+    }
+
+    .c-b-image {
+        left: 0;
+        bottom: -30px;
+    }
+
+    /* Our Story Section */
+
+    .our-story-2 img {
+        width: 100%;
+        height: 523px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    /* About Section */
+
+    .line2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-collapse {
+        top: 0;
+    }
+
+    .hours-section {
+        top: 80px;
+    }
+
+    .about-section,
+    .company-benefits-section,
+    .our-story-section,
+    .achievement-section,
+    .branding-section,
+    footer {
+        padding: 50px 0;
+    }
+
+    /* Our Story Section */
+
+    .our-story-2 img {
+        max-width: 675px;
+    }
+
+    .second-story>div:first-child {
+        order: 2;
+    }
+
+    .second-story>div:last-child {
+        order: 1;
+    }
+
+    .our-story-desc-3 {
+        margin-bottom: 45px;
+    }
+
+    /* Branding Section */
+
+    .branding-content {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .branding-content div {
+        flex: 0 0 30%;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .ft-logo-sec,
+    .quick-links {
+        margin-bottom: 60px;
+    }
+
+    .ft-logo-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ft-para {
+        text-align: center;
+    }
+
+    .quick-links,
+    .our-services,
+    .news-letters {
+        text-align: center;
+    }
+
+    .our-services {
+        margin-bottom: 55px;
+    }
+
+    .q-links,
+    .o-services,
+    .news-ltrs {
+        margin-bottom: 25px !important;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+
+    .top-navbar {
+        display: none;
+    }
+
+    .navbar-collapse {
+        top: 0;
+    }
+
+    .nav-logo img {
+        max-width: 120px;
+    }
+
+    .navbar-collapse {
+        width: 90%;
+    }
+
+    /* Banner Section */
+
+    .title1 {
+        font-size: 50px;
+    }
+
+    /* About Section */
+
+    .title2 {
+        font-size: 36px;
+    }
+
+    .sub-hdr,
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .about-us-btm-cnt {
+        justify-content: center !important;
+    }
+
+    .About-img-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .About-img-2 {
+        display: none;
+    }
+
+    /* Company Benefit Section */
+
+    .company-benefits-section .title2 {
+        margin-bottom: 30px;
+    }
+
+    .c-b-cards {
+        margin-bottom: 0;
+    }
+
+    .c-b-card-1,
+    .c-b-card-2 {
+        margin: 0 auto;
+    }
+
+    .c-b-cards-btm {
+        flex-wrap: wrap;
+    }
+
+    .c-b-card-3 {
+        margin-top: 0 !important;
+    }
+
+    .c-b-cards,
+    .c-b-cards-btm {
+        gap: 20px;
+    }
+
+    .c-b-image {
+        display: none;
+    }
+
+    /* Our Story Section */
+
+    .our-story-desc-1,
+    .our-story-desc-2,
+    .our-story-desc-3 {
+        text-align: center;
+    }
+
+    .our-story-1,
+    .our-story-2,
+    .our-story-3 {
+        text-align: center;
+    }
+
+    .service-hdr {
+        justify-content: center;
+    }
+
+    .our-story-1 img,
+    .our-story-2 img,
+    .our-story-3 img {
+        max-width: 280px;
+    }
+
+    .our-story-2 img {
+        height: 218.19px;
+    }
+
+    /* Achievement Section */
+
+    .achieve-desc {
+        margin-bottom: 40px;
+    }
+
+    /* Branding Section */
+
+    .branding-content {
+        justify-content: center !important;
+    }
+
+    .branding-content div {
+        flex: 0 0 30%;
+        text-align: center;
+    }
+
+    .branding-content img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    .bottom-part-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .bottom-part-footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .terms,
+    .policy {
+        margin-right: 0 !important;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+
+    /* Header Section */
+    .navbar-nav .nav-item {
+        margin-bottom: 0;
+    }
+
+    /* Footer */
+
+    .copy-part {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    /* About Section */
+
+    .book-now {
+        left: 50px;
+    }
+}

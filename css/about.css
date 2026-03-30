@@ -335,6 +335,26 @@ a {
     padding: 16px 32px;
 }
 
+.our-story-1,
+.our-story-2,
+.our-story-3 {
+    overflow: hidden;
+}
+
+.our-story-1 img,
+.our-story-2 img,
+.our-story-3 img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.our-story-1:hover img,
+.our-story-2:hover img,
+.our-story-3:hover img {
+    transform: scale(1.1);
+}
+
 /* Our Story Ends */
 
 /* Achievement Starts */
@@ -820,6 +840,8 @@ footer {
     .our-story-2 img {
         height: 218.19px;
     }
+
+
 
     /* Achievement Section */
 

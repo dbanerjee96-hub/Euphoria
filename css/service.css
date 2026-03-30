@@ -182,9 +182,66 @@ a {
     color: var(--secondary-color);
 }
 
+.bento-grid-img {
+    position: relative;
+    overflow: hidden;
+}
+
 .bento-grid-img img {
     width: 100%;
     height: 100%;
+    display: block;
+}
+
+.spe-social {
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.spe-social a {
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* .bento-grid-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease;
+} */
+
+.bento-grid-img .spe-social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.bento-grid-img:hover .spe-social {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bento-grid-img img {
+    transition: transform 0.4s ease;
+}
+
+.bento-grid-img:hover img {
+    transform: scale(1.1);
+}
+
+.spe-social a {
+    margin: 0 10px;
 }
 
 /* Service Ends */
@@ -259,12 +316,45 @@ a {
     color: var(--secondary-color);
 }
 
+.therapy-pic-1,
+.therapy-pic-2,
+.therapy-pic-3,
+.therapy-pic-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.therapy-pic-1 img,
+.therapy-pic-2 img,
+.therapy-pic-3 img,
+.therapy-pic-4 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.therapy-pic-1:hover img,
+.therapy-pic-2:hover img,
+.therapy-pic-3:hover img,
+.therapy-pic-4:hover img {
+    transform: scale(1.1);
+}
+
 /* Therapy Ends */
 
 /* Couple Starts */
 
 .couple-section {
     padding: 100px 0;
+}
+
+.couple-pic img {
+    transition: transform 0.4s ease;
+}
+
+.couple-pic:hover img {
+    transform: scale(1.1);
 }
 
 /* Couple Ends */
@@ -277,6 +367,14 @@ a {
 
 .bridal-pic img {
     width: 100%;
+}
+
+.bridal-pic img {
+    transition: transform 0.4s ease;
+}
+
+.bridal-pic:hover img {
+    transform: scale(1.1);
 }
 
 /* Bridal Ends */

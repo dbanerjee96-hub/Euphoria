@@ -12,7 +12,6 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -540,46 +539,16 @@
                 </div>
                 <h2 class="title2 text-white">A Wide Selection Service</h2>
             </div>
-            <!-- Swiper -->
+
             <div class="swiper serviceSwiper">
                 <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="service-card">
-                            <img src="./assets/service1.jpg" alt="">
-                            <span>HAIR CARE</span>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="service-card">
-                            <img src="./assets/service2.jpg" alt="">
-                            <span>SAUNA RELAX</span>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide active-slide">
-                        <div class="service-card">
-                            <img src="./assets/service3.jpg" alt="">
-                            <span>BODY SCULPTING</span>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="service-card">
-                            <img src="./assets/service4.jpg" alt="">
-                            <span>THERMAL BATH</span>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="service-card">
-                            <img src="./assets/service5.jpg" alt="">
-                            <span>STONE MASSAGE</span>
-                        </div>
-                    </div>
-
+                    <div class="swiper-slide"><img src="./assets/service1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/service3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/service2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/service4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/service5.jpg" alt=""></div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
 
             <div class="text-end mt-4">
@@ -1395,31 +1364,33 @@
             }
         });
 
-        // Service Section
-
-        const swiper = new Swiper(".serviceSwiper", {
+        let swiper = new Swiper(".serviceSwiper", {
             slidesPerView: "auto",
-            spaceBetween: 20,
             centeredSlides: true,
-            loop: true,
-            speed: 800,
-
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-
             breakpoints: {
                 320: {
-                    spaceBetween: 10
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                },
+                576: {
+                    slidesPerView: 1.5,
                 },
                 768: {
-                    spaceBetween: 20
+                    slidesPerView: 2,
                 },
                 1024: {
-                    spaceBetween: 30
+                    slidesPerView: 2.5,
+                },
+                1200: {
+                    slidesPerView: 3,
                 }
             }
+
         });
 
         // Gallery Section

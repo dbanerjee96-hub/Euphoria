@@ -290,6 +290,39 @@ a {
     margin-bottom: 20px;
 }
 
+/* Hover Effect */
+
+.o-t-box {
+    position: relative;
+}
+
+.o-t-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../assets/TREATMENT-2.png) no-repeat center/cover;
+    opacity: 0;
+    transition: 0.4s ease;
+    z-index: 1;
+}
+
+.o-t-box:hover::before {
+    opacity: 1;
+}
+
+.o-t-1,
+.o-t-text {
+    position: relative;
+    z-index: 2;
+}
+
+.o-t-box:hover .o-t-text {
+    color: var(--tertiary-color);
+}
+
 /* Our Treatment Ends */
 
 /* Hour Starts */
@@ -567,50 +600,37 @@ a {
     background: url(../assets/our-service-bg.png) no-repeat center/cover;
 }
 
-/* Swiper Section */
-
-.serviceSwiper {
-    padding: 60px 0;
-}
-
-.serviceSwiper .swiper-slide {
-    width: 250px;
-    transition: 0.4s ease;
-    opacity: 0.5;
-    transform: scale(0.85);
-}
-
-.serviceSwiper .swiper-slide-active {
-    width: 400px !important;
-    opacity: 1;
-    transform: scale(1);
-}
-
-.service-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.service-card img {
+.swiper {
     width: 100%;
-    height: 400px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.service-card span {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-family: "Marcellus", serif;
-    font-size: 18px;
+.swiper-slide {
+    width: 60%;
 }
 
-.service-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+.swiper-slide:nth-child(2n) {
+    width: 40%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 20%;
 }
 
 /* Our Service Ends */

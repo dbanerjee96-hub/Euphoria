@@ -334,6 +334,10 @@ footer {
     font-size: 16px;
 }
 
+.ft-links:hover {
+    color: var(--secondary-color) !important;
+}
+
 .newsletter-form {
     display: flex;
     flex-direction: column;
@@ -370,6 +374,60 @@ footer {
 /* Media Query Starts */
 
 @media screen and (max-width:1200px) {
+    /* Header Section */
+
+    .navbar-nav {
+        flex-direction: row !important;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+        flex: 1;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .icons {
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Header Section */
+
+    .top-bar-cnt {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Map Section */
+
+    .map-sec img {
+        width: 100%;
+        height: 390px;
+    }
+
+    /* Event Section */
+
+    .event-pic img {
+        width: 100%;
+        /* height: 348px; */
+    }
+
+    .event-date {
+        right: 12px;
+    }
+}
+
+@media screen and (max-width:992px) {
     /* Header Section */
 
     .navbar-collapse {
@@ -433,13 +491,23 @@ footer {
     .navbar-nav {
         flex-direction: column !important;
         align-items: center;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        flex: 0 0 auto;
     }
 
-    .navbar-nav .nav-item {
+    .nav-item {
         margin-bottom: 10px;
         margin-left: 0;
+    }
+
+    .icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+        flex: 0 0 auto;
     }
 
     .icons-svg {
@@ -470,37 +538,6 @@ footer {
         overflow: hidden;
         height: 100vh;
     }
-}
-
-@media screen and (max-width:1024px) {
-
-    /* Header Section */
-
-    .top-bar-cnt {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    /* Map Section */
-
-    .map-sec img {
-        width: 100%;
-        height: 390px;
-    }
-
-    /* Event Section */
-
-    .event-pic img {
-        width: 100%;
-        /* height: 348px; */
-    }
-
-    .event-date {
-        right: 12px;
-    }
-
-
 }
 
 @media screen and (max-width:768px) {
